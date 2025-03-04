@@ -60,11 +60,11 @@ Image CreateDisplayImage(Image targetImage, Image randomImage, decimal similarit
     }
 
     // 情報文字列を描画
-    displayImage.InsertText(0, targetImage.Height + 2, $"色階調数    : {config.ColorLevels + 1}", Color.White);
+    displayImage.InsertText(0, targetImage.Height + 2, $"色階調数　　　　: {config.ColorLevels + 1}", Color.White);
     displayImage.InsertText(0, targetImage.Height + 3, $"一致判定しきい値: {config.SimilarityThreshold * 100}%", Color.White);
-    displayImage.InsertText(0, targetImage.Height + 4, $"一致度     : {string.Format("{0:F4}", similarity * 100)}%", Color.White);
-    displayImage.InsertText(0, targetImage.Height + 5, $"生成回数    : {createCount}", Color.White);
-    displayImage.InsertText(0, targetImage.Height + 6, $"一致判定回数  : {matchedCount}", Color.White);
+    displayImage.InsertText(0, targetImage.Height + 4, $"一致度　　　　　: {string.Format("{0:F4}", similarity * 100)}%", Color.White);
+    displayImage.InsertText(0, targetImage.Height + 5, $"生成回数　　　　: {createCount}", Color.White);
+    displayImage.InsertText(0, targetImage.Height + 6, $"一致判定回数　　: {matchedCount}", Color.White);
 
     return displayImage;
 }
